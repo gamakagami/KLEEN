@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero {
+    background: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.features {
+    padding: 50px 0;
+    background: #fff;
+}
+
+.features .feature-item {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+}
+
+.features img {
+    width: 100px;
+    height: 100px;
+}
+
+.pricing {
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+
+.pricing p {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.reviews {
+    padding: 50px 0;
+    background: #fff;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.contact {
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+
+.contact .social-links {
+    margin-top: 20px;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+}
