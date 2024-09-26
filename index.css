@@ -1,6 +1,67 @@
-* {
-    margin: 0;
+*{
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
 }
 
+body{
+    background-color:#fdfcf9;
+}
+
+.navbar{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    margin-bottom: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fdfcf9;
+    z-index: 10000;
+    box-shadow: 0px 0px 3px rgba(0,0,0.5);
+}  
+
+.home{
+    width: 100%;
+    text-align: center;
+    color:rgb(148, 190, 228);
+    padding-top: 3rem;
+}
+
+.aboutus{
+    width: 100%;
+    text-align: center;
+    color:rgb(148, 190, 228);
+    padding-top: 3rem;
+}
+
+.soapbler{
+    width: 100%;
+    text-align: center;
+    color:rgb(148, 190, 228);
+    font-family: 'Neonderthaw';
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+
+.products{
+    width: 100%;
+    text-align: center;
+    color:rgb(148, 190, 228);
+    padding-top: 3rem;
+}
+
+.contactus{
+    width: 100%;
+    text-align: center;
+    color:rgb(148, 190, 228);
+    padding-top: 3rem;
+}
+
+.aboutussectioncontainer{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 8rem;
+    background-color: rgb(228, 228, 228);
+    height: 40rem;
+    z-index: 1;
+}
