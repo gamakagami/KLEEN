@@ -1,9 +1,28 @@
-function buyNow() {
-    alert("Redirecting to the purchase page!");
-    // You can add actual logic to redirect the user to a product page.
+let currentSlide = 0;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length; // Get total slides count
+
+    // Ensure the index wraps around
+    if (index >= totalSlides) {
+        currentSlide = 0; // Loop back to first slide
+    } else if (index < 0) {
+        currentSlide = totalSlides - 1; // Loop to last slide
+    } else {
+        currentSlide = index; // Set to the current index
+    }
+
+    // Calculate offset for sliding effect
+    const offset = -currentSlide * 100; 
+    document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
 }
 
-function orderNow() {
-    alert("Order Now! Your product will be shipped soon.");
-    // Add actual logic to handle order placement.
+function changeSlide(step) {
+    showSlide(currentSlide + step);
 }
+
+// Optionally, auto-change slides every few seconds
+setInterval(() => {
+    changeSlide(1);
+}, 5000); // Change slide every 5 seconds
