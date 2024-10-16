@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #fdfcf9;
+    background-color: #F9F7F7;
 }
 
 .navbar {
@@ -295,7 +295,7 @@ button {
 }
 
 button:hover {
-    background-color: #b88b6a;
+    background-color:lightslategrey;
 }
 
 footer {
