@@ -1,13 +1,15 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Forum", serif;
 }
 
-body{
-    background-color:#fdfcf9;
+body {
+    background-color: #fdfcf9;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     height: 6rem;
     display: flex;
@@ -17,83 +19,86 @@ body{
     left: 0;
     background-color: #fdfcf9;
     z-index: 10000;
-    box-shadow: 0px 0px 3px rgba(0,0,0.5);
-}  
+    box-shadow: 0px 0px 3px rgba(0, 0, 0.5);
+}
 
-.home{
+.home, .aboutus, .products, .contactus {
     width: 100%;
     text-align: center;
-    color:rgb(148, 190, 228);
+    color: rgb(148, 190, 228);
     padding-top: 3rem;
     font-size: 1rem;
 }
 
-.aboutus{
+.soapbler {
     width: 100%;
     text-align: center;
-    color:rgb(148, 190, 228);
-    padding-top: 3rem;
-    font-size: 1rem;
-}
-
-.soapbler{
-    width: 100%;
-    text-align: center;
-    color:rgb(148, 190, 228);
+    color: rgb(148, 190, 228);
     font-family: 'Neonderthaw';
     font-size: 3rem;
     padding-top: 1rem;
 }
 
-.products{
-    width: 100%;
-    text-align: center;
-    color:rgb(148, 190, 228);
-    padding-top: 3rem;
-    font-size: 1rem;
-}
-
-.contactus{
-    width: 100%;
-    text-align: center;
-    color:rgb(148, 190, 228);
-    padding-top: 3rem;
-    font-size: 1rem;
-}
-
-.slidescontainer{
+.slidescontainer {
     width: 85%;
     margin: 0 auto;
     margin-top: 8rem;
+    margin-bottom: 2rem;
     background-color: rgb(228, 228, 228);
     height: 25rem;
-    z-index: 1;
     overflow: hidden;
     border-radius: 20px;
+    position: relative;
 }
 
-.slides{
-    width: 200%;
-    height: 100%;
-    animation: slide 15s infinite;
-    display: flex;
+.slides {
+    display: flex; /* Arrange slides in a row */
+    transition: transform 0.5s ease; /* Smooth transition */
+    height: 100%; /* Full height of the container */
 }
 
-.slide{
-    width: 50%;
+.slide {
+    min-width: 100%; /* Each slide takes full width of the container */
+    height: 100%; /* Make images cover the height */
+    display: flex; /* Display images side by side */
 }
 
-img{
+.slide img {
+    width: 50%; /* Each image takes half the width of the slide */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10; /* Ensure buttons are above images */
+}
+
+.prev {
+    left: 10px; /* Position for previous button */
+}
+
+.next {
+    right: 10px; /* Position for next button */
+}
+
+
+img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-@keyframes slide{
+@keyframes slide {
     0% {transform: translateX(0%);}
     10% {transform: translateX(0%);}
-    20% {transform: translateX(0%)}
+    20% {transform: translateX(0%);}
     30% {transform: translateX(0%);}
     40% {transform: translateX(-50%);}
     50% {transform: translateX(-50%);}
@@ -101,4 +106,867 @@ img{
     70% {transform: translateX(-50%);}
     80% {transform: translateX(-50%);}
     90% {transform: translateX(-50%);}
-    100% {transform: translateX(0%);}}
+    100% {transform: translateX(0%);}
+}
+
+.white_upper_section{
+    width: 100%;
+    height: 19rem;
+    background-color: #F9F7F7;
+    display: flex;
+}
+
+.left-side{
+    width: 60%;
+}
+
+.right-side{
+    width: 40%;
+}
+
+.aboutus_section{
+    font-family:"Forum", serif;
+    height: 70%;
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.aboutus_head{
+    font-weight: 800;
+    font-size: 1.8rem;
+    display: block;
+}
+
+.aboutus_body{
+    display: block;
+    margin-top: 2rem;
+}
+
+.oval_frame{
+    border-radius: 0px 0px 200px 200px;
+    width: 70%;
+    height: 23rem;
+    border: 1px solid black;
+    margin-left: 3rem;
+    overflow: hidden;
+}
+
+.OIPP{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.product_container{
+    height: 21rem;
+    width: 100%;
+    background-color:  #C7CEE1;
+    display: block;
+}
+
+.product_head{
+    font-family:"Forum", serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.pictures_large{
+    display: flex;
+    margin-top: 3rem;
+    height: 20rem;
+}
+.lal{
+    background-color: #C7CEE1;
+    padding: 1rem;
+}
+.box{
+    width: 16%;
+    height: 50%;
+    border:1.2px solid black;
+    margin-left: 7%;
+}
+
+.pictures_small{
+    display: none;
+}
+
+.features_container{
+    height: 35rem;
+    width: 100%;
+    background-color:  #DBE2EF;
+}
+
+.features_header{
+    font-family:"Forum", serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.features{
+    height: 21rem;
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.feature{
+    width: 33%;
+    height: 100%
+}
+
+.shape{
+    width: 80%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.rounded{
+    width: 90%;
+    height: 55%;
+    border-radius: 400px 400px 0px 0px;
+    border: 0.5px solid black; 
+    margin: 0 auto;
+}
+
+.rect{
+    width: 90%;
+    height: 45%;
+    background-color: #C7CEE1;
+    margin:  0 auto;
+}
+
+.feature_head{
+    font-family: "Forum", serif;
+    text-align: center;
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+
+.feature_body{
+    font-family: "Forum", serif;
+    width: 80%;
+    padding-top: 1rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.features_small{
+    display: none;
+}
+/* C7CEE1 */
+.contact-section {
+    background-color: #C7CEE1;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 50% / 15%;
+    margin: 4rem auto;
+    max-width: 50%;
+}
+
+.contact-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Neonderthaw', cursive;
+    color: #4c4c4c;
+}
+
+.contact-text p {
+    color: #4c4c4c;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    background-color: #d5b392;
+    border: none;
+    padding: 0.75rem 2rem;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #b88b6a;
+}
+
+footer {
+    background-color: #3F72AF;
+    padding: 2rem;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.footer-links {
+    display: flex;
+    width: 100%;
+    right: 0;
+}
+
+.empty{
+    width: 70%;
+}
+.footerr{
+    width: 12%;
+}
+
+#special_footer{
+    width: 20%;
+}
+
+.footer-links h4 {
+    margin-bottom: 0.75rem;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links ul li a:hover {
+    color: #83bbfc;
+}
+
+@media only screen and (min-width: 1330px){
+  
+    .aboutus_head{
+        font-size: 2.1rem;
+    }
+    
+    .aboutus_body{
+        font-size: 1.3rem;
+    }
+       
+    .product_head{
+        font-size: 2.1rem;
+        padding-top: 4rem;
+    }
+
+    .white_upper_section{
+        height: 22rem;
+    }    
+
+    .oval_frame{
+        border-radius: 0px 0px 300px 300px;
+        height: 28rem;
+   }
+
+   .product_container{
+        height: 27rem;
+    }
+
+    .pictures_large{
+        margin-top: 4rem;
+        height: 20rem;
+    }
+
+    .feature_head{
+        font-size: 1.7rem;
+    }
+
+    .feature_body{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1330px){
+  
+    .aboutus_head{
+        font-size: 2rem;
+    }
+    
+    .aboutus_body{
+        font-size: 1.2rem;
+    }
+       
+    .product_head{
+        font-size: 2rem;
+        padding-top: 4rem;
+    }
+
+    .white_upper_section{
+        height: 22rem;
+    }    
+
+    .oval_frame{
+        border-radius: 0px 0px 300px 300px;
+        height: 28rem;
+   }
+
+   .product_container{
+        height: 27rem;
+    }
+
+    .pictures_large{
+        margin-top: 4rem;
+        height: 20rem;
+    }
+
+    .footerr{
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 931px) and (max-width: 1150px){
+
+    .features{
+        height: 21rem;
+        width: 75%;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+
+    .rounded{
+        width: 100%;
+        height: 55%;
+        border-radius: 400px 400px 0px 0px;
+        border: 0.5px solid black; 
+        margin: 0 auto;
+    }
+    
+    .rect{
+        width: 100%;
+        height: 45%;
+        background-color: #C7CEE1;
+        margin:  0 auto;
+    }    
+
+    .footerr{
+        width: 40%;
+    }
+    
+}
+@media only screen and (min-width: 801px) and (max-width: 930px){
+
+    .pictures_large{
+        height: 20rem;
+    }
+
+    .white_upper_section{
+        height: 19rem;
+    }
+
+    .aboutus_section{
+        width: 70%;
+        height: 75%;
+    }
+
+    .box{
+        height: 40%;  
+        width: 20%; 
+        margin-left: 4%;
+    }
+
+    .product_container{
+        height: 21em;
+    }
+    
+    .features{
+        height: 21rem;
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+
+    .rounded{
+        width: 100%;
+        height: 50%;
+        border-radius: 400px 400px 0px 0px;
+        border: 0.5px solid black; 
+        margin: 0 auto;
+    }
+    
+    .rect{
+        width: 100%;
+        height: 40%;
+        background-color: #C7CEE1;
+        margin:  0 auto;
+    }    
+
+    .feature_head{
+        font-size: 1.5rem;
+    }
+
+    .feature_body{
+        font-size: 0.9rem;
+    }
+
+    .footerr{
+        width: 40%;
+    }
+
+}
+
+@media only screen and (min-width: 632px) and (max-width: 800px){
+
+    .oval_frame{
+        border-radius: 0px 0px 0px 300px;
+        height: 36vh;
+        float: right;
+   }
+
+   .white_upper_section{
+        height: 19rem;
+    }
+
+    .oval_frame{
+        height: 17rem;
+    }
+
+    .left-side{
+        width: 70%;
+    }
+
+    .aboutus_section{
+        width: 70%;
+    }
+    
+    .right-side{
+        width: 30%;
+    }
+
+    .pictures_large{
+        display: none;
+    }
+
+    .pictures_small{
+        display: block;
+    }
+
+    .top{
+        width: 100%;
+        display: flex;
+        margin-top: 2.5rem;
+        height: 8rem;
+    }
+
+    .bottom{
+        width: 100%;
+        display: flex;
+        margin-top: 2rem;
+        height: 8rem;
+    }
+
+    .box{
+        margin-left: 14.3%;
+        width: 30%;
+        height: 90%;
+    }
+
+    .product_container{
+        height: 32rem;
+    }
+
+    .features{
+        display: none;
+    }
+
+    .features_small{
+        display:contents;
+    }
+
+    .product_top{
+        width: 80%;
+        display: flex;
+        height: 20rem;
+        margin: 0 auto;
+        padding-top: 2.5rem;
+    }
+
+    .feature{
+        width: 50%;
+    }
+
+    .product_bottom{
+        width: 40%;
+        height: 20rem;
+        margin: 0 auto;
+        padding-top: 2.5rem;
+    }
+
+    .product_bottom .feature{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .features_container{
+        height: 55rem;
+    }
+
+    .footerr{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 510px) and (max-width: 632px){
+
+    .oval_frame{
+        border-radius: 0px 0px 0px 300px;
+        height: 36vh;
+        float: right;
+   }
+
+   .white_upper_section{
+        height: 21rem;
+    }
+
+    .oval_frame{
+        height: 17rem;
+    }
+
+    .left-side{
+        width: 70%;
+    }
+
+    .aboutus_section{
+        width: 80%;
+    }
+    
+    .right-side{
+        width: 30%;
+    }
+
+    .pictures_large{
+        display: none;
+    }
+
+    .pictures_small{
+        display: block;
+    }
+
+    .top{
+        width: 100%;
+        display: flex;
+        margin-top: 2.5rem;
+        height: 8rem;
+    }
+
+    .bottom{
+        width: 100%;
+        display: flex;
+        margin-top: 2rem;
+        height: 8rem;
+    }
+
+    .box{
+        margin-left: 14.3%;
+        width: 30%;
+        height: 90%;
+    }
+
+    .product_container{
+        height: 28rem;
+    }
+
+    .features{
+        display: none;
+    }
+
+    .features_small{
+        display:contents;
+    }
+
+    .product_top{
+        width: 90%;
+        display: flex;
+        height: 20rem;
+        margin: 0 auto;
+        padding-top: 2.5rem;
+    }
+
+    .feature{
+        width: 50%;
+    }
+
+    .rounded{
+        width: 95%;
+    }
+
+    .rect{
+        height: 50%;
+        width: 95%;
+    }
+
+    .product_bottom{
+        width: 45%;
+        height: 20rem;
+        margin: 0 auto;
+        padding-top: 2.5rem;
+    }
+
+    .product_bottom .feature{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .features_container{
+        height: 53rem;
+    }
+
+    .footerr{
+        width: 60%;
+    }
+
+}
+
+@media only screen and (min-width: 381px) and (max-width: 509px){
+    
+    .right-side{
+        display: none;
+        width: 0%;
+    }
+
+    .left-side{
+        width: 100%;
+    }
+
+    .aboutus_section{
+        width: 80%;
+    }
+
+    .white_upper_section{
+        height: 19rem;
+    }
+
+    .pictures_large{
+        display: none;
+    }
+
+    .pictures_small{
+        display: block;
+    }
+
+    .top{
+        width: 100%;
+        display: flex;
+        margin-top: 2.5rem;
+        height: 7rem;
+    }
+
+    .bottom{
+        width: 100%;
+        display: flex;
+        margin-top: 2rem;
+        height: 7rem;
+    }
+
+    .box{
+        margin-left: 7%;
+        margin-top: 3%;
+        width: 40%;
+        height: 90%;
+    }
+
+    .product_container{
+        height: 27rem;
+    }
+
+    .features{
+        display: none;
+    }
+
+    .features_small{
+        display:contents;
+        width: 100%;
+    }
+
+    .product_top{
+        width: 90%;
+        display: flex;
+        height: 20rem;
+        margin: 0 auto;
+        padding-top: 2.5rem;
+    }
+
+    .feature{
+        width: 50%;
+    }
+
+    .feature_body{
+        width: 90%;
+    }
+
+    .shape{
+        width: 90%;
+    }
+
+    .rounded{
+        width: 100%;
+    }
+
+    .rect{
+        height: 50%;
+        width: 100%;
+    }
+
+    .product_bottom{
+        width: 45%;
+        height: 20rem;
+        margin: 0 auto;
+        padding-top: 2.5rem;
+    }
+
+    .product_bottom .feature{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .features_container{
+        height: 53rem;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    
+    .right-side{
+        display: none;
+        width: 0%;
+    }
+
+    .left-side{
+        width: 100%;
+    }
+
+    .aboutus_section{
+        width: 80%;
+    }
+
+    .white_upper_section{
+        height: 21rem;
+    }
+
+    .pictures_large{
+        display: none;
+    }
+
+    .pictures_small{
+        display: block;
+    }
+
+    .top{
+        width: 100%;
+        display: flex;
+        margin-top: 2.5rem;
+        height: 7rem;
+    }
+
+    .bottom{
+        width: 100%;
+        display: flex;
+        margin-top: 2rem;
+        height: 7rem;
+    }
+
+    .box{
+        margin-left: 7%;
+        margin-top: 3%;
+        width: 40%;
+        height: 90%;
+    }
+
+    .product_container{
+        height: 27rem;
+    }
+
+    .features{
+        display: none;
+    }
+
+    .features_small{
+        display:contents;
+        width: 100%;
+    }
+
+    .product_top{
+        width: 95%;
+        display: flex;
+        height: 20rem;
+        margin: 0 auto;
+        padding-top: 2.5rem;
+    }
+
+    .feature{
+        width: 50%;
+    }
+
+    .feature_body{
+        width: 90%;
+    }
+
+    .shape{
+        width: 90%;
+    }
+
+    .rounded{
+        width: 100%;
+    }
+
+    .rect{
+        height: 50%;
+        width: 100%;
+    }
+
+    .product_bottom{
+        width: 47.5%;
+        height: 20rem;
+        margin: 0 auto;
+        padding-top: 2.5rem;
+    }
+
+    .product_bottom .feature{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .features_container{
+        height: 53rem;
+    }
+}
+/* Media query for smaller screens */
+@media only screen and (max-width: 800px) {
+    .footer-links {
+        flex-wrap: wrap; /* Allow wrapping to the next line */
+        justify-content: space-between; /* Space out items */
+    }
+
+    .footerr {
+        width: calc(50% - 1rem); /* Each footer section takes half width minus some space for margins */
+        margin-bottom: 1rem; /* Add some space between sections */
+    }
+
+    #special_footer {
+        width: calc(50% - 1rem); /* Make special footer take half width */
+        margin-bottom: 1rem; /* Add some space below it */
+    }
+
+    /* Optional: Adjust the last item in case of an odd number of items */
+    .footer-links ul:last-child {
+        margin-bottom: 0; /* Remove bottom margin for the last item */
+    }
+}
