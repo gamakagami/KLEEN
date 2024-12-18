@@ -22,14 +22,6 @@ body {
     box-shadow: 0px 0px 3px rgba(0, 0, 0.5);
 }
 
-.home, .aboutus, .products, .contactus {
-    width: 100%;
-    text-align: center;
-    color: rgb(148, 190, 228);
-    padding-top: 3rem;
-    font-size: 1rem;
-}
-
 .soapbler {
     width: 100%;
     text-align: center;
@@ -39,43 +31,8 @@ body {
     padding-top: 1rem;
 }
 
-.slidescontainer {
-    width: 85%;
-    margin: 0 auto;
-    margin-top: 8rem;
-    margin-bottom: 2rem;
-    background-color: rgb(228, 228, 228);
-    height: 25rem;
-    overflow: hidden;
-    border-radius: 20px;
-    position: relative;
-}
-
-.slides{
-    display: flex;
-    width: 300%;
-    animation: slide 12s infinite;
-}
-
-.slide img{
-    object-fit: cover;
-    object-position: center;
-    width: 30%;
-    height: 100%;
-}
-
-@keyframes slide {
-    0% {transform: translateX(0%);}
-    10% {transform: translateX(0%);}
-    20% {transform: translateX(0%);}
-    30% {transform: translateX(0%);}
-    40% {transform: translateX(-50%);}
-    50% {transform: translateX(-50%);}
-    60% {transform: translateX(-50%);}
-    70% {transform: translateX(-50%);}
-    80% {transform: translateX(-50%);}
-    90% {transform: translateX(-50%);}
-    100% {transform: translateX(0%);}
+.aboutus_container{
+    margin-top: 9rem;
 }
 
 .white_upper_section{
@@ -159,6 +116,7 @@ body {
     height: 50%;
     border:1.2px solid black;
     margin-left: 7%;
+    overflow: hidden;
 }
 
 #box1{
@@ -334,6 +292,13 @@ footer {
 
 .footer-links ul li a:hover {
     color: #83bbfc;
+}
+
+.product_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 @media only screen and (min-width: 1330px){
@@ -570,13 +535,9 @@ footer {
     }
 
     .box{
-        margin-left: 14.3%;
-        width: 30%;
-        height: 90%;
-    }
-
-    #box1{
-        margin-left: 14.3%;
+        margin: 0 auto;
+        width: 40%;
+        height: 100%;
     }
 
     .product_container{
@@ -675,9 +636,9 @@ footer {
     }
 
     .box{
-        margin-left: 14.3%;
-        width: 30%;
-        height: 90%;
+        margin: 0 auto;
+        width: 40%;
+        height: 100%;
     }
 
     .product_container{
@@ -741,10 +702,6 @@ footer {
 
 @media only screen and (min-width: 381px) and (max-width: 509px){
     
-    #box1{
-        margin-left: 14.3%;
-    }
-    
     .right-side{
         display: none;
         width: 0%;
@@ -775,7 +732,6 @@ footer {
         display: flex;
         margin-top: 2.5rem;
         height: 7rem;
-        margin-left: -7%;
     }
 
     .bottom{
@@ -786,12 +742,10 @@ footer {
     }
 
     .box{
-        margin-left: 7%;
-        margin-top: 3%;
+        margin: 0 auto;
         width: 40%;
-        height: 90%;
+        height: 100%;
     }
-
     .product_container{
         height: 27rem;
     }
@@ -883,7 +837,6 @@ footer {
         display: flex;
         margin-top: 2.5rem;
         height: 7rem;
-        margin-left: -7%;
     }
 
     .bottom{
@@ -894,10 +847,9 @@ footer {
     }
 
     .box{
-        margin-left: 7%;
-        margin-top: 3%;
+        margin: 0 auto;
         width: 40%;
-        height: 90%;
+        height: 100%;
     }
 
     .product_container{
