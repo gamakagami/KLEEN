@@ -530,18 +530,18 @@ footer {
     .bottom{
         width: 100%;
         display: flex;
-        margin-top: 2rem;
+        margin-top: 6rem;
         height: 8rem;
     }
 
     .box{
         margin: 0 auto;
-        width: 40%;
-        height: 100%;
+        width: 60%;
+        height: 130%;
     }
 
     .product_container{
-        height: 32rem;
+        height: 36rem;
     }
 
     .features{
@@ -631,18 +631,18 @@ footer {
     .bottom{
         width: 100%;
         display: flex;
-        margin-top: 2rem;
+        margin-top: 5rem;
         height: 8rem;
     }
 
     .box{
         margin: 0 auto;
-        width: 40%;
-        height: 100%;
+        width: 60%;
+        height: 120%;
     }
 
     .product_container{
-        height: 28rem;
+        height: 33rem;
     }
 
     .features{
@@ -737,17 +737,17 @@ footer {
     .bottom{
         width: 100%;
         display: flex;
-        margin-top: 2rem;
+        margin-top: 4rem;
         height: 7rem;
     }
 
     .box{
         margin: 0 auto;
-        width: 40%;
-        height: 100%;
+        width: 60%;
+        height: 120%;
     }
     .product_container{
-        height: 27rem;
+        height: 31rem;
     }
 
     .features{
@@ -842,18 +842,18 @@ footer {
     .bottom{
         width: 100%;
         display: flex;
-        margin-top: 2rem;
+        margin-top: 4rem;
         height: 7rem;
     }
 
     .box{
         margin: 0 auto;
-        width: 40%;
-        height: 100%;
+        width: 60%;
+        height: 120%;
     }
 
     .product_container{
-        height: 27rem;
+        height: 31rem;
     }
 
     .features{
